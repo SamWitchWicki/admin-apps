@@ -63,6 +63,8 @@
     <div class="mobile-author-actions"></div>
     <header class="header-top">
         <nav class="navbar navbar-light">
+
+            <!-- navbar-left -->
             <div class="navbar-left">
                 <a href="" class="sidebar-toggle">
                     <img class="svg" src="{{ asset('import/img/svg/bars.svg') }}" alt="img"></a>
@@ -114,6 +116,8 @@
                             <input class="form-control mr-sm-2 box-shadow-none" type="text" placeholder="Search...">
                         </form>
                     </li>
+
+                    <!-- nav-message -->
                     <li class="nav-message">
                         <div class="dropdown-custom">
                             <a href="javascript:;" class="nav-item-toggle">
@@ -205,6 +209,8 @@
                         </div>
                     </li>
                     <!-- ends: nav-message -->
+
+                    <!-- nav-notification -->
                     <li class="nav-notification">
                         <div class="dropdown-custom">
                             <a href="javascript:;" class="nav-item-toggle">
@@ -348,6 +354,7 @@
     </header>
     <main class="main-content">
 
+        <!-- Sidebar -->
         <aside class="sidebar-wrapper">
             <div class="sidebar sidebar-collapse" id="sidebar">
                 <div class="sidebar__menu-group">
@@ -396,7 +403,9 @@
                 </div>
             </div>
         </aside>
+        <!-- End Sidebar -->
 
+        <!-- Content -->
         <div class="contents">
 
             <div class="container-fluid">
@@ -440,22 +449,23 @@
                                                 <i class="la la-file-csv"></i> CSV</a>
                                         </div>
                                     </div>
-                                    <div class="action-btn">
-                                        <a href="" class="btn btn-sm btn-primary btn-add">
-                                            <i class="la la-plus"></i> Add New</a>
-                                    </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
 
+                    <!-- Content Menu -->
                     @yield('content')
+                    <!-- End Content Menu -->
 
                 </div>
             </div>
 
         </div>
+        <!-- End Content -->
+
+        <!-- Footer Menu -->
         <footer class="footer-wrapper">
             <div class="container-fluid">
                 <div class="row">
@@ -473,11 +483,12 @@
                                 </li>
                             </ul>
                         </div>
-                        <!-- ends: .Footer Menu -->
                     </div>
                 </div>
             </div>
         </footer>
+        <!-- ends: .Footer Menu -->
+
     </main>
     <div id="overlayer">
         <span class="loader-overlay">
